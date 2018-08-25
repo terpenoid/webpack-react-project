@@ -1,0 +1,20 @@
+{
+  "extends": ["airbnb"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".json", ".jsx"],
+        "moduleDirectory": ["node_modules", "./src"]
+      }
+    }
+  },
+  "rules": {
+    "no-debugger": "error",
+    "no-alert": "error",
+    "react/display-name": ["error", { "ignoreTranspilerName": true }],
+    "react/prefer-stateless-function": "error"
+  },
+  "env": {
+    "browser": true
+  }
+}
